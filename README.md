@@ -1,10 +1,10 @@
-#Technical test
+# Technical test
 
-##Context
+## Context
 
 This is an implementation of a technical test. Instructions can be found [here](https://gist.github.com/sfriquet/55b18848d6d58b8185bbada81c620c4a).
 
-##Building and running
+## Building and running
 
 In order to build the project, clone the repository to your computer. You will need maven to build it and execute it.
 
@@ -51,13 +51,13 @@ if m is the number of queries.
 - At the end, we sort the HashMap and create a LinkedHashMap. This is a worst case O(m * logm) operation.
 - Overall, the popular operation is O(m * n + m *logm) operation.
 
-##Thoughts
+## Thoughts
 
-###Memory
+### Memory
 This only works as long as your whole tree can fit in memory. For memory problems, except distributing the memory in multiple nodes (ex: Redis),
 we could pre-sort our input file, and depending on the time interval, build a structure based on this time interval only.
 
-###Time/memory tradeoffs
+### Time/memory tradeoffs
 Other choices could be made, that encompass tradeoffs between memory and time.
 
 For instance, instead of using a binary tree for storing timestamps, we could store the timestamps in an array, and have a HashMap acting as an index.
