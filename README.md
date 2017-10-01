@@ -11,7 +11,7 @@ In order to build the project, clone the repository to your computer. You will n
 Run `mvn package` to build the project. It will run the tests.  
 Run `mvn package -DskipTests` to skip the tests execution.
 
-If you want to generate the javadoc, run `mvn javadoc:javadoc`. It will be generated in the current directory, in target/site/apidocs`.
+If you want to generate the javadoc, run `mvn javadoc:javadoc`. It will be generated in the current directory, in `target/site/apidocs`.
 
 Then run the project: `mvn exec:java -Dexec.args="/path/to/file.tsv"`. This will read your file and run a jetty web server on port 8080 on your machine
 (make sure port 8080 is not already used). This might be an error in the instructions: the code works with the provided file, where **columns are
